@@ -37,7 +37,7 @@ void Ordenador_Vector (int numeros[LIM])
 	{
 		for (j = f; j < LIM; j++)
 		{
-			if (numeros[f] > numeros[j])			// >>> Bubblesort <<<
+			if (numeros[f] > numeros[j])			
 			{
 				aux = numeros[f];
 				numeros[f] = numeros[j];
