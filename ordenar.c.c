@@ -6,25 +6,25 @@ void Ordenador_Vector (int numeros[LIM]);
 int main()
 {
     int numeros[LIM];
-	printf("Bienvenido a ");
-    printf("Bienvenido a mi programa...\n");
+	printf("Bienvenido");
+    printf("Bienvenido al programan");
     printf("Ingrese 10 valores para ordenarlos de mayor a menor\n");
-    for (int i = 0; i < LIM; i++)
+    for (int f = 0; f < LIM; f++)
     //lim significa que tomamos el límite de algo.
     //for permite repetir una instrucción o una instrucción compuesta un número especificado de veces.
     {
         printf(">>> ");
-        scanf("%d", &numeros[i]);
+        scanf("%d", &numeros[f]);
     }
 	printf("Vector Ingresado: {");
-	for (int i = 0; i < LIM; i++)
+	for (int f = 0; f < LIM; f++)
 	{
-		if (i == 9)
+		if (f == 9)
 		{
-			printf("%d}\n", numeros[i]);
+			printf("%d}\n", numeros[f]);
 			break;
 		} 
-		printf("%d, ", numeros[i]);
+		printf("%d, ", numeros[f]);
 	}
 	Ordenador_Vector (numeros);
     return 0;
@@ -32,27 +32,27 @@ int main()
 
 void Ordenador_Vector (int numeros[LIM])
 {
-	int i, j, aux;
-	for (i = 0; i < LIM; i++)
+	int f, j, aux;
+	for (f = 0; f < LIM; f++)
 	{
-		for (j = i; j < LIM; j++)
+		for (j = f; j < LIM; j++)
 		{
-			if (numeros[i] > numeros[j])			// >>> Bubblesort <<<
+			if (numeros[f] > numeros[j])			// >>> Bubblesort <<<
 			{
-				aux = numeros[i];
-				numeros[i] = numeros[j];
+				aux = numeros[f];
+				numeros[f] = numeros[j];
 				numeros[j] = aux;
 			}
 		}
 	}
 	printf("Vector Ordenado: {");
-	for (i = 0; i < LIM; i++)
+	for (f = 0; f < LIM; f++)
 	{
-		if (i == 9)
+		if (f == 9)
 		{
-			printf("%d}", numeros[i]);
+			printf("%d}", numeros[f]);
 			break;
 		}
-		printf("%d, ", numeros[i]);
+		printf("%d, ", numeros[f]);
 	}
 }
