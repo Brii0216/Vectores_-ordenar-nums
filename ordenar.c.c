@@ -6,7 +6,6 @@ void Ordenador_Vector (int numeros[LIM]);
 int main()
 {
     int numeros[LIM];
-	printf("Bienvenido");
     printf("Bienvenido al programan");
     printf("Ingrese 10 valores para ordenarlos de mayor a menor\n");
     for (int f = 0; f < LIM; f++)
